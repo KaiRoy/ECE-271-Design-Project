@@ -17,3 +17,4 @@ module modulator #(parameter N = 24, M = 22)
 		.d(q[M]),
 		.q(out)
 	);
+endmodule
