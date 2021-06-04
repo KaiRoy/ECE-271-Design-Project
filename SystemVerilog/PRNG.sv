@@ -1,7 +1,7 @@
 module prng#(parameter N = 24)
 				(input wire clk, reset, 
 				 output wire [N-1:0] q);
-
+//test
 	reg [N-1:0] random;
 	wire [N-1:0] next;
 	wire feedback;
