@@ -7,7 +7,7 @@ module DiceMachine
     );
 
     logic en, clk_5Hz;
-    logic [23:0] PRNGtoP;
+    logic [16:0] PRNGtoP;
     logic [3:0] PtoDC0, PtoDC1, PtoDC2, PtoDC3, PtoDC4, PtoDC5;
 
     //Clock Modulator *CREATE FUNCTION*
@@ -88,8 +88,4 @@ module DiceMachine
         .d(PtoDC5),
         .q(seg5)
     );
-    
-
-
-
 endmodule

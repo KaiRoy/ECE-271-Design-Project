@@ -1,4 +1,5 @@
-module parser #(parameter N = 23)
+<<<<<<< HEAD
+module parser #(parameter N = 17)
 		(input logic [N-1:0]d,
 		output logic [3:0] ones, tens, hundreds, thousands, ten_thousands, hundred_thousands);
 	assign ones = d % 6 + 1;
