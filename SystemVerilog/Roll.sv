@@ -7,7 +7,7 @@ module Roll #(parameter N = 10)
 
     logic [N-1:0] x1;
 
-    .ShiftRegister SR (
+    ShiftRegister SR (
         .clk(clk),
         .reset(~button),
         .sin(button),

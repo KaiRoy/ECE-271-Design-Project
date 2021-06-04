@@ -1,4 +1,4 @@
-module DFF #(parameter N = 7)
+module DFlipFlop #(parameter N = 7)
     (
     input logic clk, reset, en,
     input logic [N-1:0] d,
