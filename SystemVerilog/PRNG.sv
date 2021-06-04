@@ -1,10 +1,10 @@
 module prng#(parameter N = 17)
-				(input wire clk, reset, 
-				 output wire [N-1:0] q);
+				(input logic clk, reset, 
+				 output logic [N-1:0] q);
 	
-	reg [N-1:0] random;
-	wire [N-1:0] next;
-	wire feedback;
+	logic [N-1:0] random;
+	logic [N-1:0] next;
+	logic feedback;
                         
 	always @(posedge clk, posedge reset)
 		begin 

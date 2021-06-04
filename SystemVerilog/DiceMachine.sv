@@ -1,14 +1,16 @@
 module DiceMachine 
     (
-        input logic clk. reset, button,
+        input logic clk. resetButton, button,
         input logic [5:0] switch,
         output logic [9:0] LED,
         output logic [6:0] seg0, seg1, seg2, seg3, seg4, seg5
     );
 
-    logic en, clk_5Hz;
+    logic en, clk_5Hz, reset;
     logic [16:0] PRNGtoP;
     logic [3:0] PtoDC0, PtoDC1, PtoDC2, PtoDC3, PtoDC4, PtoDC5;
+
+    assign reset = ~resetButton;
 
     //Clock Modulator *CREATE FUNCTION*
 
