@@ -1,4 +1,4 @@
-module sync(input logic clk,
+module Sync(input logic clk,
 				input logic d,
 				output logic q);
 				
