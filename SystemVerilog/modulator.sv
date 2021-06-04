@@ -6,13 +6,13 @@ module modulator #(parameter N = 24, M = 22)
 	
 	logic [N-1:0] q
 	
-	Counter count (
+	counter count (
 		.clk(clk),
 		.reset(reset),
 		.q(q)
 	);
 	
-	synchronizer sync (
+	Sync sync (
 		.clk(clk),
 		.d(q[M]),
 		.q(out)
