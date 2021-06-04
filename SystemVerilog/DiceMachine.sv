@@ -12,8 +12,12 @@ module DiceMachine
 
     assign reset = ~resetButton;
 
-    //Clock Modulator *CREATE FUNCTION*
-
+    //Clock Modulator
+    modulator CM (
+        .clk(clk),
+        .reset(reset),
+        .out(clk_5Hz)
+    );
 
     //Roll Function
     Roll RF (

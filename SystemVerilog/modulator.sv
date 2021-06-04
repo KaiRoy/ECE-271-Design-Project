@@ -14,6 +14,6 @@ module modulator #(parameter N = 24, M = 22)
 	
 	synchronizer sync (
 		.clk(clk),
-		.d(q[22]),
+		.d(q[M]),
 		.q(out)
 	);
