@@ -14,8 +14,8 @@ module Roll #(parameter N = 10)
         .q(x1)
     );
 
-    for (genvar i = 0; i < 10; i++) begin
-        LED[i] = button & x1[i];
+    for (genvar i = 0; i < N; i++) begin
+        LED[(N-1)-i] = button & x1[i];
     end
 
     assign en = &x1;
