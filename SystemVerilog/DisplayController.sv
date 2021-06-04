@@ -1,6 +1,6 @@
 module DisplayController #(parameter N = 4, M = 7)
     (
-        input logic s, clk, reset
+        input logic s, clk, reset,
         input logic [N-1:0] d,
         output logic [M-1:0] q
     );
