@@ -1,4 +1,4 @@
-module counter #(parameter N = 8)
+module counter #(parameter N = 24)
 		(input logic clk,
 		input logic reset,
 		output logic [N-1:0] q);
