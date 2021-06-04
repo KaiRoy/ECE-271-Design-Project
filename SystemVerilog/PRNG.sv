@@ -1,4 +1,4 @@
-module prng#(parameter N = 24)
+module prng#(parameter N = 17)
 				(input wire clk, reset, 
 				 output wire [N-1:0] q);
 	
@@ -18,7 +18,7 @@ module prng#(parameter N = 24)
 	end
 
 	
-	assign feedback = random[23] ^ random[22] ^ random[6] ^ random[2] ^ random[0];
+	assign feedback = random[16] ^ random[15] ^ random[9] ^ random[3] ^ random[0];
 
 	assign next = {feedback, random[N-1:1]};
 
