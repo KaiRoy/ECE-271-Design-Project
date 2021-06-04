@@ -11,12 +11,12 @@ module DiceMachine
     logic [3:0] PtoDC0, PtoDC1, PtoDC2, PtoDC3, PtoDC4, PtoDC5;
 
     //Clock Modulator *CREATE FUNCTION*
-    
+
 
     //Roll Function
     Roll RF (
         .button(button),
-        .clk(clk_5Hz)
+        .clk(clk_5Hz),
         .en(en),
         .LED(LED)
     );
