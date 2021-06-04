@@ -11,9 +11,9 @@ module DiceMachine
     logic [3:0] PtoDC0, PtoDC1, PtoDC2, PtoDC3, PtoDC4, PtoDC5;
 
     //Clock Modulator *CREATE FUNCTION*
+    
 
-
-    //Roll Function *EDIT FUNCTION* 
+    //Roll Function
     Roll RF (
         .button(button),
         .clk(clk_5Hz)
@@ -21,7 +21,7 @@ module DiceMachine
         .LED(LED)
     );
     
-    //Pseudo-Random Number Generator *POSSIBLE EDIT*
+    //Pseudo-Random Number Generator
     prng PRNG (
         .clk(clk),
         .reset(reset),
