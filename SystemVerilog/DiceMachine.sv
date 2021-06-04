@@ -44,7 +44,7 @@ module DiceMachine
         .s(switch[0]),
         .clk(clk),
         .reset(reset),
-        .en(en).
+        .en(en),
         .d(PtoDC0),
         .q(seg0)
     );
@@ -52,7 +52,7 @@ module DiceMachine
         .s(switch[1]),
         .clk(clk),
         .reset(reset),
-        .en(en).
+        .en(en),
         .d(PtoDC1),
         .q(seg1)
     );
@@ -60,7 +60,7 @@ module DiceMachine
         .s(switch[2]),
         .clk(clk),
         .reset(reset),
-        .en(en).
+        .en(en),
         .d(PtoDC2),
         .q(seg2)
     );
@@ -68,7 +68,7 @@ module DiceMachine
         .s(switch[3]),
         .clk(clk),
         .reset(reset),
-        .en(en).
+        .en(en),
         .d(PtoDC3),
         .q(seg3)
     );
@@ -76,7 +76,7 @@ module DiceMachine
         .s(switch[4]),
         .clk(clk),
         .reset(reset),
-        .en(en).
+        .en(en),
         .d(PtoDC4),
         .q(seg4)
     );
@@ -84,7 +84,7 @@ module DiceMachine
         .s(switch[5]),
         .clk(clk),
         .reset(reset),
-        .en(en).
+        .en(en),
         .d(PtoDC5),
         .q(seg5)
     );
