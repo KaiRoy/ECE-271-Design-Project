@@ -7,7 +7,7 @@ module DFlipFlop #(parameter N = 7)
 
     always_ff @(posedge clk, posedge reset)
         if (reset)
-            q <= 0;
+            q <= 7'b111_1111;
         else if (en)
             q <= d;
 endmodule

@@ -21,7 +21,7 @@ module DiceMachine
 
     //Roll Function
     Roll RF (
-        .button(button),
+        .button(~button),
         .clk(clk_5Hz),
         .en(en),
         .LED(LED)
@@ -56,7 +56,7 @@ module DiceMachine
     );
     DisplayController DC1 (
         .s(switch[1]),
-        .clk(clk),
+        .clk(clk_5Hz),
         .reset(reset),
         .en(en),
         .d(PtoDC1),
@@ -64,7 +64,7 @@ module DiceMachine
     );
     DisplayController DC2 (
         .s(switch[2]),
-        .clk(clk),
+        .clk(clk_5Hz),
         .reset(reset),
         .en(en),
         .d(PtoDC2),
@@ -72,7 +72,7 @@ module DiceMachine
     );
     DisplayController DC3 (
         .s(switch[3]),
-        .clk(clk),
+        .clk(clk_5Hz),
         .reset(reset),
         .en(en),
         .d(PtoDC3),
@@ -80,7 +80,7 @@ module DiceMachine
     );
     DisplayController DC4 (
         .s(switch[4]),
-        .clk(clk),
+        .clk(clk_5Hz),
         .reset(reset),
         .en(en),
         .d(PtoDC4),
@@ -88,7 +88,7 @@ module DiceMachine
     );
     DisplayController DC5 (
         .s(switch[5]),
-        .clk(clk),
+        .clk(clk_5Hz),
         .reset(reset),
         .en(en),
         .d(PtoDC5),

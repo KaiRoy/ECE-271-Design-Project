@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ECE_272_Design_Project
-Fri Jun 04 17:05:45 2021
+Fri Jun 04 17:49:02 2021
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -10,7 +10,52 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Inverted Register Statistics
+ 11. Parameter Settings for User Entity Instance: DiceMachine:inst|modulator:CM
+ 12. Parameter Settings for User Entity Instance: DiceMachine:inst|modulator:CM|counter:count
+ 13. Parameter Settings for User Entity Instance: DiceMachine:inst|Roll:RF
+ 14. Parameter Settings for User Entity Instance: DiceMachine:inst|Roll:RF|ShiftRegister:SR
+ 15. Parameter Settings for User Entity Instance: DiceMachine:inst|prng:PRNG
+ 16. Parameter Settings for User Entity Instance: DiceMachine:inst|parser:P
+ 17. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC0
+ 18. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC0|mux2:Mux
+ 19. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF
+ 20. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC1
+ 21. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC1|mux2:Mux
+ 22. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF
+ 23. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC2
+ 24. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC2|mux2:Mux
+ 25. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF
+ 26. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC3
+ 27. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC3|mux2:Mux
+ 28. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF
+ 29. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC4
+ 30. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC4|mux2:Mux
+ 31. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF
+ 32. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC5
+ 33. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC5|mux2:Mux
+ 34. Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF
+ 35. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod0
+ 36. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div0
+ 37. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod1
+ 38. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div1
+ 39. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod2
+ 40. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div2
+ 41. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod3
+ 42. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div3
+ 43. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod4
+ 44. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div4
+ 45. Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod5
+ 46. Port Connectivity Checks: "DiceMachine:inst|Roll:RF|ShiftRegister:SR"
+ 47. Port Connectivity Checks: "DiceMachine:inst|modulator:CM|counter:count"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -36,22 +81,22 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Fri Jun 04 17:05:45 2021           ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 04 17:49:02 2021       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; ECE_272_Design_Project                      ;
 ; Top-level Entity Name              ; ECE_272_Design_Project                      ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 1,532                                       ;
+;     Total combinational functions  ; 1,505                                       ;
+;     Dedicated logic registers      ; 94                                          ;
+; Total registers                    ; 94                                          ;
+; Total pins                         ; 61                                          ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
@@ -150,11 +195,808 @@ refer to the applicable agreement for further details.
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
+; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
 +----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++---------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path            ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ; Library ;
++---------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+; ../SystemVerilog/synchronizer.sv            ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/synchronizer.sv            ;         ;
+; ../SystemVerilog/ShiftRegister.sv           ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/ShiftRegister.sv           ;         ;
+; ../SystemVerilog/SevSeg Display Decorder.sv ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/SevSeg Display Decorder.sv ;         ;
+; ../SystemVerilog/Roll.sv                    ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Roll.sv                    ;         ;
+; ../SystemVerilog/PRNG.sv                    ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/PRNG.sv                    ;         ;
+; ../SystemVerilog/parser.sv                  ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv                  ;         ;
+; ../SystemVerilog/Mux2.sv                    ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Mux2.sv                    ;         ;
+; ../SystemVerilog/modulator.sv               ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/modulator.sv               ;         ;
+; ../SystemVerilog/DisplayController.sv       ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DisplayController.sv       ;         ;
+; ../SystemVerilog/DiceMachine.sv             ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DiceMachine.sv             ;         ;
+; ../SystemVerilog/DFlipFlop.sv               ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DFlipFlop.sv               ;         ;
+; ../SystemVerilog/Counter.sv                 ; yes             ; User SystemVerilog HDL File        ; D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Counter.sv                 ;         ;
+; ECE_272_Design_Project.bdf                  ; yes             ; User Block Diagram/Schematic File  ; D:/GitHub/School/ECE-271-Design-Project/Quartus/ECE_272_Design_Project.bdf       ;         ;
+; lpm_divide.tdf                              ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/lpm_divide.tdf            ;         ;
+; abs_divider.inc                             ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/abs_divider.inc           ;         ;
+; sign_div_unsign.inc                         ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/sign_div_unsign.inc       ;         ;
+; aglobal180.inc                              ; yes             ; Megafunction                       ; c:/intelfpga_lite/18.0/quartus/libraries/megafunctions/aglobal180.inc            ;         ;
+; db/lpm_divide_rll.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_rll.tdf            ;         ;
+; db/sign_div_unsign_qlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_qlh.tdf       ;         ;
+; db/alt_u_div_uhe.tdf                        ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf             ;         ;
+; db/add_sub_t3c.tdf                          ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/add_sub_t3c.tdf               ;         ;
+; db/add_sub_u3c.tdf                          ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/add_sub_u3c.tdf               ;         ;
+; db/lpm_divide_otl.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_otl.tdf            ;         ;
+; db/lpm_divide_rtl.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_rtl.tdf            ;         ;
+; db/sign_div_unsign_tlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_tlh.tdf       ;         ;
+; db/alt_u_div_4ie.tdf                        ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_4ie.tdf             ;         ;
+; db/lpm_divide_ttl.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_ttl.tdf            ;         ;
+; db/sign_div_unsign_vlh.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_vlh.tdf       ;         ;
+; db/alt_u_div_8ie.tdf                        ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_8ie.tdf             ;         ;
+; db/lpm_divide_7vl.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_7vl.tdf            ;         ;
+; db/sign_div_unsign_9nh.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_9nh.tdf       ;         ;
+; db/alt_u_div_ske.tdf                        ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_ske.tdf             ;         ;
+; db/lpm_divide_9vl.tdf                       ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_9vl.tdf            ;         ;
+; db/sign_div_unsign_bnh.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_bnh.tdf       ;         ;
+; db/alt_u_div_0le.tdf                        ; yes             ; Auto-Generated Megafunction        ; D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_0le.tdf             ;         ;
++---------------------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 1,532             ;
+;                                             ;                   ;
+; Total combinational functions               ; 1505              ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 272               ;
+;     -- 3 input functions                    ; 394               ;
+;     -- <=2 input functions                  ; 839               ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 1067              ;
+;     -- arithmetic mode                      ; 438               ;
+;                                             ;                   ;
+; Total registers                             ; 94                ;
+;     -- Dedicated logic registers            ; 94                ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 61                ;
+;                                             ;                   ;
+; Embedded Multiplier 9-bit elements          ; 0                 ;
+;                                             ;                   ;
+; Maximum fan-out node                        ; resetButton~input ;
+; Maximum fan-out                             ; 82                ;
+; Total fan-out                               ; 4142              ;
+; Average fan-out                             ; 2.41              ;
++---------------------------------------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                           ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                               ; Entity Name            ; Library Name ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+; |ECE_272_Design_Project                      ; 1505 (0)            ; 94 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |ECE_272_Design_Project                                                                                                                           ; ECE_272_Design_Project ; work         ;
+;    |DiceMachine:inst|                        ; 1505 (0)            ; 94 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst                                                                                                          ; DiceMachine            ; work         ;
+;       |DisplayController:DC0|                ; 9 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC0                                                                                    ; DisplayController      ; work         ;
+;          |DFlipFlop:DFF|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF                                                                      ; DFlipFlop              ; work         ;
+;          |mux2:Mux|                          ; 9 (9)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC0|mux2:Mux                                                                           ; mux2                   ; work         ;
+;       |DisplayController:DC1|                ; 7 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC1                                                                                    ; DisplayController      ; work         ;
+;          |DFlipFlop:DFF|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF                                                                      ; DFlipFlop              ; work         ;
+;          |mux2:Mux|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC1|mux2:Mux                                                                           ; mux2                   ; work         ;
+;       |DisplayController:DC2|                ; 7 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC2                                                                                    ; DisplayController      ; work         ;
+;          |DFlipFlop:DFF|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF                                                                      ; DFlipFlop              ; work         ;
+;          |mux2:Mux|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC2|mux2:Mux                                                                           ; mux2                   ; work         ;
+;       |DisplayController:DC3|                ; 7 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC3                                                                                    ; DisplayController      ; work         ;
+;          |DFlipFlop:DFF|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF                                                                      ; DFlipFlop              ; work         ;
+;          |mux2:Mux|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC3|mux2:Mux                                                                           ; mux2                   ; work         ;
+;       |DisplayController:DC4|                ; 7 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC4                                                                                    ; DisplayController      ; work         ;
+;          |DFlipFlop:DFF|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF                                                                      ; DFlipFlop              ; work         ;
+;          |mux2:Mux|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC4|mux2:Mux                                                                           ; mux2                   ; work         ;
+;       |DisplayController:DC5|                ; 7 (0)               ; 7 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC5                                                                                    ; DisplayController      ; work         ;
+;          |DFlipFlop:DFF|                     ; 0 (0)               ; 7 (7)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF                                                                      ; DFlipFlop              ; work         ;
+;          |mux2:Mux|                          ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|DisplayController:DC5|mux2:Mux                                                                           ; mux2                   ; work         ;
+;       |Roll:RF|                              ; 3 (3)               ; 10 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|Roll:RF                                                                                                  ; Roll                   ; work         ;
+;          |ShiftRegister:SR|                  ; 0 (0)               ; 10 (10)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|Roll:RF|ShiftRegister:SR                                                                                 ; ShiftRegister          ; work         ;
+;       |modulator:CM|                         ; 23 (0)              ; 25 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|modulator:CM                                                                                             ; modulator              ; work         ;
+;          |counter:count|                     ; 23 (23)             ; 23 (23)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|modulator:CM|counter:count                                                                               ; counter                ; work         ;
+;          |sync:SYNC|                         ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|modulator:CM|sync:SYNC                                                                                   ; sync                   ; work         ;
+;       |parser:P|                             ; 1432 (0)            ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P                                                                                                 ; parser                 ; work         ;
+;          |lpm_divide:Div0|                   ; 143 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div0                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_otl:auto_generated|  ; 143 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div0|lpm_divide_otl:auto_generated                                                   ; lpm_divide_otl         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 143 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div0|lpm_divide_otl:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 143 (143)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div0|lpm_divide_otl:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;          |lpm_divide:Div1|                   ; 190 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div1                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rtl:auto_generated|  ; 190 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div1|lpm_divide_rtl:auto_generated                                                   ; lpm_divide_rtl         ; work         ;
+;                |sign_div_unsign_tlh:divider| ; 190 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div1|lpm_divide_rtl:auto_generated|sign_div_unsign_tlh:divider                       ; sign_div_unsign_tlh    ; work         ;
+;                   |alt_u_div_4ie:divider|    ; 190 (190)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div1|lpm_divide_rtl:auto_generated|sign_div_unsign_tlh:divider|alt_u_div_4ie:divider ; alt_u_div_4ie          ; work         ;
+;          |lpm_divide:Div2|                   ; 222 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div2                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_ttl:auto_generated|  ; 222 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div2|lpm_divide_ttl:auto_generated                                                   ; lpm_divide_ttl         ; work         ;
+;                |sign_div_unsign_vlh:divider| ; 222 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div2|lpm_divide_ttl:auto_generated|sign_div_unsign_vlh:divider                       ; sign_div_unsign_vlh    ; work         ;
+;                   |alt_u_div_8ie:divider|    ; 222 (222)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div2|lpm_divide_ttl:auto_generated|sign_div_unsign_vlh:divider|alt_u_div_8ie:divider ; alt_u_div_8ie          ; work         ;
+;          |lpm_divide:Div3|                   ; 194 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div3                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_7vl:auto_generated|  ; 194 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div3|lpm_divide_7vl:auto_generated                                                   ; lpm_divide_7vl         ; work         ;
+;                |sign_div_unsign_9nh:divider| ; 194 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div3|lpm_divide_7vl:auto_generated|sign_div_unsign_9nh:divider                       ; sign_div_unsign_9nh    ; work         ;
+;                   |alt_u_div_ske:divider|    ; 194 (194)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div3|lpm_divide_7vl:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_ske:divider ; alt_u_div_ske          ; work         ;
+;          |lpm_divide:Div4|                   ; 139 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div4                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_9vl:auto_generated|  ; 139 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div4|lpm_divide_9vl:auto_generated                                                   ; lpm_divide_9vl         ; work         ;
+;                |sign_div_unsign_bnh:divider| ; 139 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div4|lpm_divide_9vl:auto_generated|sign_div_unsign_bnh:divider                       ; sign_div_unsign_bnh    ; work         ;
+;                   |alt_u_div_0le:divider|    ; 139 (139)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Div4|lpm_divide_9vl:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_0le:divider ; alt_u_div_0le          ; work         ;
+;          |lpm_divide:Mod0|                   ; 145 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod0                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rll:auto_generated|  ; 145 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod0|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 145 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod0|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 145 (145)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod0|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;          |lpm_divide:Mod1|                   ; 131 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod1                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rll:auto_generated|  ; 131 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 131 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 131 (131)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;          |lpm_divide:Mod2|                   ; 104 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod2                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rll:auto_generated|  ; 104 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 104 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 104 (104)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;          |lpm_divide:Mod3|                   ; 84 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod3                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rll:auto_generated|  ; 84 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 84 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 84 (84)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;          |lpm_divide:Mod4|                   ; 51 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod4                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rll:auto_generated|  ; 51 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 51 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 51 (51)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;          |lpm_divide:Mod5|                   ; 29 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod5                                                                                 ; lpm_divide             ; work         ;
+;             |lpm_divide_rll:auto_generated|  ; 29 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod5|lpm_divide_rll:auto_generated                                                   ; lpm_divide_rll         ; work         ;
+;                |sign_div_unsign_qlh:divider| ; 29 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod5|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider                       ; sign_div_unsign_qlh    ; work         ;
+;                   |alt_u_div_uhe:divider|    ; 29 (29)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|parser:P|lpm_divide:Mod5|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider ; alt_u_div_uhe          ; work         ;
+;       |prng:PRNG|                            ; 3 (3)               ; 17 (17)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |ECE_272_Design_Project|DiceMachine:inst|prng:PRNG                                                                                                ; prng                   ; work         ;
++----------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------+------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                     ;
++---------------------------------------------------+--------------------+
+; Register name                                     ; Reason for Removal ;
++---------------------------------------------------+--------------------+
+; DiceMachine:inst|modulator:CM|counter:count|q[23] ; Lost fanout        ;
+; Total Number of Removed Registers = 1             ;                    ;
++---------------------------------------------------+--------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 94    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 92    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 42    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++---------------------------------------------------------------------+
+; Inverted Register Statistics                                        ;
++-----------------------------------------------------------+---------+
+; Inverted Register                                         ; Fan out ;
++-----------------------------------------------------------+---------+
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[6] ; 1       ;
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[5] ; 1       ;
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[4] ; 1       ;
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[3] ; 1       ;
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[2] ; 1       ;
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[1] ; 1       ;
+; DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF|q[0] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[6] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[5] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[4] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[3] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[2] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[1] ; 1       ;
+; DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF|q[0] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[6] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[5] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[4] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[3] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[2] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[1] ; 1       ;
+; DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF|q[0] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[6] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[5] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[4] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[3] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[2] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[1] ; 1       ;
+; DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF|q[0] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[6] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[5] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[4] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[3] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[2] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[1] ; 1       ;
+; DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF|q[0] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[6] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[5] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[4] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[3] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[2] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[1] ; 1       ;
+; DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF|q[0] ; 1       ;
+; DiceMachine:inst|prng:PRNG|random[0]                      ; 7       ;
+; Total number of inverted registers = 43                   ;         ;
++-----------------------------------------------------------+---------+
+
+
++----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|modulator:CM ;
++----------------+-------+---------------------------------------------------+
+; Parameter Name ; Value ; Type                                              ;
++----------------+-------+---------------------------------------------------+
+; N              ; 24    ; Signed Integer                                    ;
+; M              ; 22    ; Signed Integer                                    ;
++----------------+-------+---------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|modulator:CM|counter:count ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; N              ; 24    ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|Roll:RF ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; N              ; 10    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|Roll:RF|ShiftRegister:SR ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; N              ; 10    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|prng:PRNG ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; N              ; 17    ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|parser:P ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; N              ; 17    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC0 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                             ;
+; M              ; 7     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC0|mux2:Mux ;
++----------------+---------+-------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                              ;
++----------------+---------+-------------------------------------------------------------------+
+; N              ; 7       ; Signed Integer                                                    ;
+; M              ; 1111111 ; Unsigned Binary                                                   ;
++----------------+---------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 7     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC1 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                             ;
+; M              ; 7     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC1|mux2:Mux ;
++----------------+---------+-------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                              ;
++----------------+---------+-------------------------------------------------------------------+
+; N              ; 7       ; Signed Integer                                                    ;
+; M              ; 1111111 ; Unsigned Binary                                                   ;
++----------------+---------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC1|DFlipFlop:DFF ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 7     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC2 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                             ;
+; M              ; 7     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC2|mux2:Mux ;
++----------------+---------+-------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                              ;
++----------------+---------+-------------------------------------------------------------------+
+; N              ; 7       ; Signed Integer                                                    ;
+; M              ; 1111111 ; Unsigned Binary                                                   ;
++----------------+---------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC2|DFlipFlop:DFF ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 7     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC3 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                             ;
+; M              ; 7     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC3|mux2:Mux ;
++----------------+---------+-------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                              ;
++----------------+---------+-------------------------------------------------------------------+
+; N              ; 7       ; Signed Integer                                                    ;
+; M              ; 1111111 ; Unsigned Binary                                                   ;
++----------------+---------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC3|DFlipFlop:DFF ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 7     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC4 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                             ;
+; M              ; 7     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC4|mux2:Mux ;
++----------------+---------+-------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                              ;
++----------------+---------+-------------------------------------------------------------------+
+; N              ; 7       ; Signed Integer                                                    ;
+; M              ; 1111111 ; Unsigned Binary                                                   ;
++----------------+---------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC4|DFlipFlop:DFF ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 7     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC5 ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; N              ; 4     ; Signed Integer                                             ;
+; M              ; 7     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC5|mux2:Mux ;
++----------------+---------+-------------------------------------------------------------------+
+; Parameter Name ; Value   ; Type                                                              ;
++----------------+---------+-------------------------------------------------------------------+
+; N              ; 7       ; Signed Integer                                                    ;
+; M              ; 1111111 ; Unsigned Binary                                                   ;
++----------------+---------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: DiceMachine:inst|DisplayController:DC5|DFlipFlop:DFF ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; N              ; 7     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod0 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rll ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div0 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_otl ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod1 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rll ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div1 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 6              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rtl ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod2 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rll ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div2 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 8              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_ttl ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod3 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rll ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div3 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 11             ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_7vl ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod4 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rll ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Div4 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 13             ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_9vl ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: DiceMachine:inst|parser:P|lpm_divide:Mod5 ;
++------------------------+----------------+--------------------------------------------------+
+; Parameter Name         ; Value          ; Type                                             ;
++------------------------+----------------+--------------------------------------------------+
+; LPM_WIDTHN             ; 17             ; Untyped                                          ;
+; LPM_WIDTHD             ; 3              ; Untyped                                          ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                                          ;
+; LPM_PIPELINE           ; 0              ; Untyped                                          ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                                          ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                                          ;
+; CBXI_PARAMETER         ; lpm_divide_rll ; Untyped                                          ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                                          ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                                   ;
++------------------------+----------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DiceMachine:inst|Roll:RF|ShiftRegister:SR"                                                               ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; sout ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "DiceMachine:inst|modulator:CM|counter:count"                                            ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; q[21..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; q[23]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; boundary_port         ; 61                          ;
+; cycloneiii_ff         ; 94                          ;
+;     CLR               ; 50                          ;
+;     ENA CLR           ; 42                          ;
+;     plain             ; 2                           ;
+; cycloneiii_lcell_comb ; 1547                        ;
+;     arith             ; 438                         ;
+;         2 data inputs ; 58                          ;
+;         3 data inputs ; 380                         ;
+;     normal            ; 1109                        ;
+;         0 data inputs ; 103                         ;
+;         1 data inputs ; 76                          ;
+;         2 data inputs ; 644                         ;
+;         3 data inputs ; 14                          ;
+;         4 data inputs ; 272                         ;
+;                       ;                             ;
+; Max LUT depth         ; 36.40                       ;
+; Average LUT depth     ; 25.59                       ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
 
 
 +-------------------------------+
@@ -163,12 +1005,12 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Jun 04 17:05:37 2021
+    Info: Processing started: Fri Jun 04 17:48:51 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ECE_272_Design_Project -c ECE_272_Design_Project
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file /github/school/ece-271-design-project/systemverilog/synchronizer.sv
-    Info (12023): Found entity 1: Sync File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/synchronizer.sv Line: 1
+    Info (12023): Found entity 1: sync File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/synchronizer.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /github/school/ece-271-design-project/systemverilog/shiftregister.sv
     Info (12023): Found entity 1: ShiftRegister File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/ShiftRegister.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file /github/school/ece-271-design-project/systemverilog/sevseg display decorder.sv
@@ -198,9 +1040,8 @@ Info (12128): Elaborating entity "DiceMachine" for hierarchy "DiceMachine:inst"
 Info (12128): Elaborating entity "modulator" for hierarchy "DiceMachine:inst|modulator:CM" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DiceMachine.sv Line: 20
 Info (12128): Elaborating entity "counter" for hierarchy "DiceMachine:inst|modulator:CM|counter:count" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/modulator.sv Line: 13
 Warning (10230): Verilog HDL assignment warning at Counter.sv(9): truncated value with size 32 to match size of target (24) File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Counter.sv Line: 9
+Info (12128): Elaborating entity "sync" for hierarchy "DiceMachine:inst|modulator:CM|sync:SYNC" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/modulator.sv Line: 19
 Info (12128): Elaborating entity "Roll" for hierarchy "DiceMachine:inst|Roll:RF" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DiceMachine.sv Line: 28
-Warning (10855): Verilog HDL warning at Roll.sv(19): initial value for variable LED should be constant File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Roll.sv Line: 19
-Warning (10034): Output port "LED" at Roll.sv(6) has no driver File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Roll.sv Line: 6
 Info (12128): Elaborating entity "ShiftRegister" for hierarchy "DiceMachine:inst|Roll:RF|ShiftRegister:SR" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/Roll.sv Line: 15
 Info (12128): Elaborating entity "prng" for hierarchy "DiceMachine:inst|prng:PRNG" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DiceMachine.sv Line: 35
 Info (12128): Elaborating entity "parser" for hierarchy "DiceMachine:inst|parser:P" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DiceMachine.sv Line: 46
@@ -214,11 +1055,137 @@ Info (12128): Elaborating entity "DisplayController" for hierarchy "DiceMachine:
 Info (12128): Elaborating entity "sevSegDecoder" for hierarchy "DiceMachine:inst|DisplayController:DC0|sevSegDecoder:SSD" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DisplayController.sv Line: 15
 Info (12128): Elaborating entity "mux2" for hierarchy "DiceMachine:inst|DisplayController:DC0|mux2:Mux" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DisplayController.sv Line: 22
 Info (12128): Elaborating entity "DFlipFlop" for hierarchy "DiceMachine:inst|DisplayController:DC0|DFlipFlop:DFF" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DisplayController.sv Line: 31
-Error (12006): Node instance "SYNC" instantiates undefined entity "sync". Ensure that required library paths are specified correctly, define the specified entity, or change the instantiation. If this entity represents Intel FPGA or third-party IP, generate the synthesis files for the IP. File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/modulator.sv Line: 19
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 10 warnings
-    Error: Peak virtual memory: 4706 megabytes
-    Error: Processing ended: Fri Jun 04 17:05:45 2021
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:18
+Info (278001): Inferred 11 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Mod0" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 4
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Div0" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 5
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Mod1" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 5
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Div1" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Mod2" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 6
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Div2" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 7
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Mod3" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 7
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Div3" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 8
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Mod4" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 8
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Div4" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 9
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "DiceMachine:inst|parser:P|Mod5" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 9
+Info (12130): Elaborated megafunction instantiation "DiceMachine:inst|parser:P|lpm_divide:Mod0" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 4
+Info (12133): Instantiated megafunction "DiceMachine:inst|parser:P|lpm_divide:Mod0" with the following parameter: File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 4
+    Info (12134): Parameter "LPM_WIDTHN" = "17"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_rll.tdf
+    Info (12023): Found entity 1: lpm_divide_rll File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_rll.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_qlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_qlh File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_qlh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_uhe.tdf
+    Info (12023): Found entity 1: alt_u_div_uhe File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 26
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/add_sub_t3c.tdf Line: 22
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/add_sub_u3c.tdf Line: 22
+Info (12130): Elaborated megafunction instantiation "DiceMachine:inst|parser:P|lpm_divide:Div0" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 5
+Info (12133): Instantiated megafunction "DiceMachine:inst|parser:P|lpm_divide:Div0" with the following parameter: File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 5
+    Info (12134): Parameter "LPM_WIDTHN" = "17"
+    Info (12134): Parameter "LPM_WIDTHD" = "3"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_otl.tdf
+    Info (12023): Found entity 1: lpm_divide_otl File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_otl.tdf Line: 24
+Info (12130): Elaborated megafunction instantiation "DiceMachine:inst|parser:P|lpm_divide:Div1" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 6
+Info (12133): Instantiated megafunction "DiceMachine:inst|parser:P|lpm_divide:Div1" with the following parameter: File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 6
+    Info (12134): Parameter "LPM_WIDTHN" = "17"
+    Info (12134): Parameter "LPM_WIDTHD" = "6"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_rtl.tdf
+    Info (12023): Found entity 1: lpm_divide_rtl File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_rtl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_tlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_tlh File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_tlh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_4ie.tdf
+    Info (12023): Found entity 1: alt_u_div_4ie File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_4ie.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "DiceMachine:inst|parser:P|lpm_divide:Div2" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 7
+Info (12133): Instantiated megafunction "DiceMachine:inst|parser:P|lpm_divide:Div2" with the following parameter: File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 7
+    Info (12134): Parameter "LPM_WIDTHN" = "17"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ttl.tdf
+    Info (12023): Found entity 1: lpm_divide_ttl File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_ttl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_vlh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_vlh File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_vlh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_8ie.tdf
+    Info (12023): Found entity 1: alt_u_div_8ie File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_8ie.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "DiceMachine:inst|parser:P|lpm_divide:Div3" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 8
+Info (12133): Instantiated megafunction "DiceMachine:inst|parser:P|lpm_divide:Div3" with the following parameter: File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 8
+    Info (12134): Parameter "LPM_WIDTHN" = "17"
+    Info (12134): Parameter "LPM_WIDTHD" = "11"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7vl.tdf
+    Info (12023): Found entity 1: lpm_divide_7vl File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_7vl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_9nh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
+    Info (12023): Found entity 1: alt_u_div_ske File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_ske.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "DiceMachine:inst|parser:P|lpm_divide:Div4" File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 9
+Info (12133): Instantiated megafunction "DiceMachine:inst|parser:P|lpm_divide:Div4" with the following parameter: File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/parser.sv Line: 9
+    Info (12134): Parameter "LPM_WIDTHN" = "17"
+    Info (12134): Parameter "LPM_WIDTHD" = "13"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_9vl.tdf
+    Info (12023): Found entity 1: lpm_divide_9vl File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/lpm_divide_9vl.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bnh File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/sign_div_unsign_bnh.tdf Line: 24
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_0le.tdf
+    Info (12023): Found entity 1: alt_u_div_0le File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_0le.tdf Line: 26
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (13000): Registers with preset signals will power-up high File: D:/GitHub/School/ECE-271-Design-Project/SystemVerilog/DFlipFlop.sv Line: 11
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 1 registers lost all their fanouts during netlist optimizations.
+Info (17016): Found the following redundant logic cells in design
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|op_10~6"
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_5_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 86
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_6_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 91
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_8_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 101
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_10_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 36
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod1|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_15_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 61
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|op_13~6"
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_8_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 101
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_9_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 106
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_10_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 36
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_11_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 41
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_12_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 46
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_13_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 51
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_14_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 56
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod2|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_15_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 61
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|op_15~6"
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_10_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 36
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_11_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 41
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_12_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 46
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_13_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 51
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_14_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 56
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_15_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 61
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod3|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_16_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 66
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|op_3~6"
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_13_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 51
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_14_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 56
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_15_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 61
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod4|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_16_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 66
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod5|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|op_5~6"
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod5|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_15_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 61
+    Info (17048): Logic cell "DiceMachine:inst|parser:P|lpm_divide:Mod5|lpm_divide_rll:auto_generated|sign_div_unsign_qlh:divider|alt_u_div_uhe:divider|add_sub_16_result_int[0]~8" File: D:/GitHub/School/ECE-271-Design-Project/Quartus/db/alt_u_div_uhe.tdf Line: 66
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 1593 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
+    Info (21059): Implemented 52 output pins
+    Info (21061): Implemented 1532 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
+    Info: Peak virtual memory: 4820 megabytes
+    Info: Processing ended: Fri Jun 04 17:49:02 2021
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
 
 
